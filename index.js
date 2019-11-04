@@ -16,10 +16,15 @@ class EIP681Parser {
       return !ReservedParams.includes(param.key);
     });
     let types = typedParams.map(p => p.key);
-    let selector = ethereumjsABI.methodID(
-      parsedUrl.function_name,
-      types
-    );
+    let selector = '';
+    if (parsedUrl.function_name) {
+      selector = ethereumjsABI.methodID(
+        parsedUrl.function_name,
+        types
+      );
+    } else {
+      selector = Buffer.from([0, 0, 0, 0]);
+    }
     let encodedValues = typedParams.map(param => {
       return ethereumjsABI.rawEncode([param.key], [param.val]);
     });
