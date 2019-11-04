@@ -78,11 +78,12 @@ class EIP681Parser {
     }
 
     let unsignedTx = new EthereumTx(txParams);
+    let serializedTx = '0x' + unsignedTx.serialize().toString('hex');
 
     return {
       ...obj,
       txParams,
-      unsignedTx: unsignedTx.serialize().toString('hex')
+      unsignedTx: serializedTx
     };
   }
 
