@@ -5,3 +5,11 @@
 `parse(url)` convert eip681 url to transaction data
 
 `createTx(url, nonce)` convert eip681 url to an unsigned eth transaction
+
+### Testing
+
+To test, run the following:
+
+`npm i`
+
+`npm test`
