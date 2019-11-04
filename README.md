@@ -1,6 +1,6 @@
 # eip681parser
 
-A parser that constructs a raw ethereum transaction from an eip681 url.
+A parser that takes in an eip681 url, and does anything from serialize tx.data to broadcasting a signed tx.
 
 If the goal of eip681 is to encode any possible contract function call, it must work for unknown ABIs/standards.
 
