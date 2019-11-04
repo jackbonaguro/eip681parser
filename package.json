@@ -9,10 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@parity/erc681": "^0.1.1",
     "eth-url-parser": "^1.0.3",
     "ethereumjs-abi": "^0.6.8",
-    "ethereumjs-tx": "^2.1.1",
-    "web3": "^1.2.2"
+    "ethereumjs-tx": "^2.1.1"
   }
 }
