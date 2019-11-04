@@ -64,6 +64,8 @@ class EIP681Parser {
     });
     if (value) {
       txParams.value = value.val;
+    } else {
+      txParams.value = '0'
     }
 
     if (
