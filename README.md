@@ -2,7 +2,7 @@
 
 A parser that takes in an eip681 url, and does anything from serialize tx.data to broadcasting a signed tx.
 
-If the goal of eip681 is to encode any possible contract function call, it must work for unknown ABIs/standards.
+eip681 makes it possible to tell wallets exact parameters for any contract call (not just standards / known ABIs), yet current npm packages have erc20-specific code. Likewise, most wallets either have no support, or partial support (coinbase wallet). This lib aims to fully implement parsing, so that wallet devs just have to connect it to their existing provider.
 
 ## Usage
 
