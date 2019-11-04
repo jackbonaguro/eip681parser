@@ -17,7 +17,7 @@ class EIP681Parser {
     });
     let types = typedParams.map(p => p.key);
     let selector = ethereumjsABI.methodID(
-      parsedUrl.parameters.function_name,
+      parsedUrl.function_name,
       types
     );
     let encodedValues = typedParams.map(param => {
