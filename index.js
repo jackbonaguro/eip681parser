@@ -100,6 +100,7 @@ class EIP681Parser {
    * @name createTx
    * @description convert eip681 url to an unsigned eth transaction
    * @param {String} url
+   * @param {Number} nonce
    * @returns {String} unsignedTx
    */
   createTx(url, nonce) {
